@@ -26,7 +26,7 @@ B = np.random.rand(matrix_size).reshape(rows, cols)
 
 local_A = np.empty((local_rows, cols))
 
-comm.Scatter(A, local_A)
+# comm.Scatter(A, local_A)
 
 # # Multiplicação local de matrizes
 local_C = matrix_multiplication(local_A, B)

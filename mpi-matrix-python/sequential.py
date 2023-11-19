@@ -12,7 +12,7 @@ def matrix_multiplication(A, B):
 
 
 # Tamanho das matrizes
-rows, cols = 300, 300
+rows, cols = 5000, 5000
 matrix_size = rows * cols
 
 # Divisão das linhas da matriz A entre os processos

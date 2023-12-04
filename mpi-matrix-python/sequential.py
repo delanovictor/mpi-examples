@@ -13,6 +13,8 @@ def matrix_multiplication(A, B):
 
 size_arg = int(sys.argv[1])
 
+print(size_arg)
+
 # Tamanho das matrizes
 rows, cols = size_arg, size_arg
 matrix_size = rows * cols
@@ -28,7 +30,7 @@ B = np.random.rand(matrix_size).reshape(rows, cols)
 
 local_A = np.empty((local_rows, cols))
 
-# comm.Scatter(A, local_A)
+comm.Scatter(A, local_A)
 
 # # Multiplicação local de matrizes
 local_C = matrix_multiplication(local_A, B)

@@ -10,9 +10,10 @@ size = comm.Get_size()
 def matrix_multiplication(A, B):
     return np.dot(A, B)
 
+size_arg = int(sys.argv[1])
 
 # Tamanho das matrizes
-rows, cols = 50, 50
+rows, cols = size_arg, size_arg
 matrix_size = rows * cols
 
 # Divisão das linhas da matriz A entre os processos
